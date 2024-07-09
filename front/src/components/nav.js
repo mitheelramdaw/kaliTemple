@@ -1,26 +1,17 @@
-// Navbar.js
-import './navbar.css';
-
+// nav.js
 
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <ul className="nav-menu">
-          <li className="nav-item">
-            <Link to="/" className="nav-links">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/booking" className="nav-links">Booking</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-links">About</Link>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/booking">Booking</Link></li>
+        <li><Link to="/about">About</Link></li>
+      </ul>
     </nav>
   );
 };

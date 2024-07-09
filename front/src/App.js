@@ -2,12 +2,15 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import './index.css'; // Import global styles if needed
+
 import Navbar from './components/nav';
 import Home from './components/home';
 import Booking from './components/booking';
 import About from './components/about';
 import Footer from './components/footer';
-import './index.css'; // Optional: Import global styles if needed
+import NotFound from './components/notFound'; // Assuming you have this component
 
 const App = () => {
   return (
@@ -15,12 +18,13 @@ const App = () => {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="./components/home.js" element={<Home />} />
-          <Route path="./components/booking.js" element={<Booking />} />
-          <Route path="./components/about.js" element={<About />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/booking" element={<Booking />} />
+          <Route exact path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
-        {/* <Footer></Footer> */}
     </Router>
   );
 };
