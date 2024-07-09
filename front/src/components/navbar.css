@@ -2,8 +2,9 @@
 
 .navbar {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
+    opacity: 0.4;
   }
   
   .navbar-container {
@@ -30,6 +31,6 @@
   }
   
   .nav-links:hover {
-    color: #f0f0f0;
+    color: #000000;
   }
   

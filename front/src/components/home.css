@@ -1,0 +1,12 @@
+body {
+    /* Specify your background image */
+    background-image: url('../assets/Ma\ Kali.jpg');
+    /* Adjust background properties to cover the entire viewport */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Set overall styles for the body */
+    margin: 0;
+    padding: 0; /* Add padding: 0; to ensure no padding */
+    font-family: Arial, sans-serif;
+  }

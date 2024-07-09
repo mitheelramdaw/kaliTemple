@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css'; // Import global styles if needed
+import './App.css'
 
 import Navbar from './components/nav';
 import Home from './components/home';
