@@ -1,0 +1,35 @@
+/* Navbar.css (create this file in the same directory as Navbar.js) */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links:hover {
+    color: #f0f0f0;
+  }
+  
