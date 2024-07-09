@@ -1,11 +1,66 @@
-/* Footer.css */
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+.footer {
+    background-color: #d2b48c; /* Light brown color */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .footer h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer ul li a:hover {
+    color: #000000;
+  }
+  
+  .footer ul li a .fa {
+    margin-right: 8px;
+  }
+  
+  /* Hover effect for links */
+  .footer a:hover {
+    color: #a0522d; /* Dark brown color */
+    text-decoration: underline;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .footer-content {
+      padding: 0 20px;
+    }
+  
+    .footer ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
